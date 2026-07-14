@@ -20,7 +20,7 @@ int main()
 
     string output = folder + "/" + filename + "_davinci.mov";
 
-    string command = "ffmpeg -i \"" + input + "\" -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -y \"" + output + "\"";
+    string command = "ffmpeg -i \"" + input + "\" -c:v prores -profile:v 0 -c:a pcm_s16le -y \"" + output + "\"";
     cout<<command<<endl;
 
     system(command.c_str());
