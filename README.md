@@ -19,23 +19,14 @@ sudo apt update && sudo apt install ffmpeg libnotify-bin
 
 ## 🚀 Installation & Setup
 
-Follow these **3 simple steps** to install the tool on your system:
+Just run these two commands in your terminal:
 
-### Step 1: Compile the C++ Core
-Build the program and move it to your system path so it can be used anywhere:
+### Step 1: Install the Right-Click Script
 ```bash
-g++ -O3 main.cpp -o dvr-converter
-sudo mv dvr-converter /usr/local/bin/
+cp convert_script.sh ~/.local/share/nautilus/scripts/Convert_to_ProRes.sh
 ```
 
-### Step 2: Install the Right-Click Script
-Copy the companion script to your file manager (Nautilus) folder:
-```bash
-cp context_menu_script.sh ~/.local/share/nautilus/scripts/Convert_to_ProRes.sh
-```
-
-### Step 3: Give Execution Permission
-Make the script executable so the system can run it:
+### Step 2: Make it Executable
 ```bash
 chmod +x ~/.local/share/nautilus/scripts/Convert_to_ProRes.sh
 ```
